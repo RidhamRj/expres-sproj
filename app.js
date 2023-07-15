@@ -28,7 +28,7 @@ app.post("/", (req, res) => {
   const url = "https://us21.api.mailchimp.com/3.0/lists/fb9331498b";
   const option = {
     method: "POST",
-    auth: "ridham:7db038c00fb0aadf62843dea5447bc99-us21",
+    auth: "ridham:2176f0ed58447ef4b6cbf3d498e6c345-us21",
   };
   const request = https.request(url, option, (response) => {
     if(response.statusCode===200){
@@ -48,5 +48,5 @@ app.post("/", (req, res) => {
 app.listen(3000 || process.env.PORT, () => {
   console.log("server started");
 });
-// 7db038c00fb0aadf62843dea5447bc99-us21
+//2176f0ed58447ef4b6cbf3d498e6c345-us21
 // fb9331498b
